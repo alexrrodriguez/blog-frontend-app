@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="posts-index">
     <h1>All Posts</h1>
     <div v-for="post in posts" v-bind:key="post.id">
       <h2>{{ post.title }}</h2>

@@ -31,7 +31,7 @@ const routes = [
   { path: "/signup", name: "signup", component: Signup },
   { path: "/login", name: "login", component: Login },
   { path: "/logout", name: "logout", component: Logout },
-  { path: "/posts", name: "posts", component: PostIndex },
+  { path: "/posts", name: "posts-index", component: PostIndex },
 ];
 
 const router = new VueRouter({
