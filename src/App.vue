@@ -19,11 +19,11 @@
           <li class="nav-item active">
             <a class="nav-link" href="/">
               Home
-              <span class="sr-only">(current)</span>
+              <span class="sr-only"></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/posts">All Posts</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -38,10 +38,10 @@
               Dropdown
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="/signup">Signup</a>
+              <a class="dropdown-item" href="/login">Login</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="/logout">Logout</a>
             </div>
           </li>
           <li class="nav-item">
@@ -78,7 +78,10 @@
 
 <style>
 body {
-  font-family: Lucida Bright, Georgia, serif;
+  font-family: Lucida Bright, Georgia, serif !important;
   background-image: url("./assets/double-bubble-outline.png");
+}
+.navbar {
+  text-align: center;
 }
 </style>

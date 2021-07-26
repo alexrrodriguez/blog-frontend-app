@@ -23,7 +23,7 @@
 
 <style>
 body {
-  font-family: Lucida Bright, Georgia, serif;
+  text-align: center;
 }
 </style>
 
