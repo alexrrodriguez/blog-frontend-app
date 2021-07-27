@@ -18,13 +18,13 @@
         </div>
       </div>
     </div>
-    <div v-for="post in posts" v-bind:key="post.id">
+    <!-- <div v-for="post in posts" v-bind:key="post.id">
       <router-link v-bind:to="`/posts/${post.id}`">
         <h2>{{ post.title }}</h2>
         <p>{{ post.body }}</p>
         <img v-bind:src="post.image" alt="post.title" />
       </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -36,6 +36,11 @@
 }
 body {
   text-align: center;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 </style>
 

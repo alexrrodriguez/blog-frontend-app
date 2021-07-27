@@ -52,7 +52,7 @@
       </div>
     </nav>
 
-    <div class="navlist" id="nav">
+    <!-- <div class="navlist" id="nav">
       <li>
         <router-link to="/">Home</router-link>
       </li>
@@ -84,7 +84,7 @@
       <li>
         <router-link to="/posts/new">New Post</router-link>
       </li>
-    </div>
+    </div> -->
     <router-view />
   </div>
 </template>
