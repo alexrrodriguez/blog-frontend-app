@@ -1,7 +1,8 @@
 <template>
   <div class="posts-new">
-    <h1>New Post</h1>
+    <img v-if="status" :src="`https://http.cat/${status}`" />
     <form v-on:submit.prevent="createPost()">
+      <h1>New Post</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
@@ -23,6 +24,7 @@ export default {
     return {
       newPostParams: {},
       errors: [],
+      status: "",
     };
   },
   created: function () {},
@@ -36,7 +38,7 @@ export default {
         })
         .catch((error) => {
           console.log("post create error", error.response);
-          this.errors = error.response.data.errors;
+          this.status = error.response.status;
         });
     },
   },
